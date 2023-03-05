@@ -12,7 +12,6 @@ export const addProduct = (product) => {
     payload: product,
   };
 };
-
 export const removeProduct = (id) => {
   return {
     type: REMOVE_PRODUCT,
@@ -34,7 +33,7 @@ export const removeFromCart = (product) => {
   };
 };
 
-export const loaded = (products) => {
+export const loadProduct = (products) => {
   return {
     type: PRODUCT_LOADED,
     payload: products,

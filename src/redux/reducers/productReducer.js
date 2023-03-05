@@ -12,6 +12,7 @@ const initialState = {
 };
 
 const productReducer = (state = initialState, action) => {
+  
   const selectedProduct = state.cart.find(
     (product) => product._id === action.payload._id
   );
